@@ -6,7 +6,7 @@ const MainLout = () => {
     return (
         <div>
             <Nav></Nav>
-      <Outlet></Outlet>
+         <Outlet></Outlet>
 
    </div>
 
