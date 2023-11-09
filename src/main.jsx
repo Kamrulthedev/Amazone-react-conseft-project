@@ -2,7 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import MainLout from './Laouts/MainLout'
+import Home from './Pages/Home/Home'
+import Prodects from './Pages/Prodects/Prodects'
 
 // const createRouter = createBrowserRouter([
 //   {
@@ -22,22 +25,23 @@ import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
 const uotlet = createBrowserRouter([
   {
     path: '/',
-    element: <section>
-      <div>This is page is Fiext page</div>
-     <Outlet></Outlet>
-    </section>,
+    element: <MainLout></MainLout>,
 
       
-    children: [{
+    children: [
+      {
          
-      path: '/prodects',
-      element: <div>This is my  prodects</div>
+      path: '/',
+      element: <Home></Home>
+    },
+    {
+      path: '/Prodects',
+      element: <Prodects></Prodects>
     }
   ]
 
   }
 ])
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
