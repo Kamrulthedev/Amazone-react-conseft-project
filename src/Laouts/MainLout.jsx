@@ -1,14 +1,15 @@
 
 import { Outlet } from 'react-router-dom';
+import Nav from "../Pages/Navber/Nav";
 
 const MainLout = () => {
     return (
         <div>
-            <section>
-      <div className='py-6 shadow-lg bg-neutral-50'>Nav</div>
-     <Outlet></Outlet>
-    </section>
-        </div>
+            <Nav></Nav>
+      <Outlet></Outlet>
+
+   </div>
+
     );
 };
 
