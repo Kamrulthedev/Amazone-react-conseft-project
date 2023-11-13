@@ -1,11 +1,22 @@
 
+import { useLoaderData } from "react-router-dom";
+import Caert from "../Caret/Caert";
+
+
+
 
 const Prodects = () => {
+
+    const Prodects = useLoaderData()
+ 
+ 
     return (
         <div>
             <div>
-                <h1>This is prodects pages</h1>
-            </div>
+              {
+                  Prodects.map(Prodect => <Caert key={Prodect.id}></Caert>)
+               }
+             </div>
         </div>
     );
 };
