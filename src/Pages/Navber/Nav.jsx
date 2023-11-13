@@ -13,7 +13,7 @@ const Nav = () => {
 
     </>
     return (
-        <div className="navbar bg-zinc-200">
+        <div className="navbar justify-between px-10 shadow-md py-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,9 +29,7 @@ const Nav = () => {
             <div className="navbar-center hidden lg:flex gap-8 text-black">
                 {Navber}
             </div>
-            <div className="navbar-end">
-                <a className="btn">sign up</a>
-            </div>
+          
         </div>
     );
 };
