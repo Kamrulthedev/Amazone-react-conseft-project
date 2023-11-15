@@ -1,22 +1,19 @@
 
 import { useLoaderData } from "react-router-dom";
-import Caert from "../Caret/Caert";
+
 
 
 
 
 const Prodects = () => {
 
-    const Prodects = useLoaderData()
+    const Prodect = useLoaderData();
+    console.log(Prodect)
  
  
     return (
-        <div>
-            <div>
-              {
-                  Prodects.map(Prodect => <Caert key={Prodect.id}></Caert>)
-               }
-             </div>
+        <div className="h-96">
+            <h1 className="text-center text-7xl font-bold mt-12">KAMRUL HASSN</h1>
         </div>
     );
 };

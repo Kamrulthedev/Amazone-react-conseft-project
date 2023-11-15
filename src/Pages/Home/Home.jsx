@@ -4,7 +4,10 @@
 
 const Home = () => {
     return (
+      <div>
+        <h1 className="text-4xl font-bold text-center mt-4 mb-4 border-b-4 border-green-400">This is my website cert</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    
         <div>
           <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
         </div>
@@ -42,6 +45,8 @@ const Home = () => {
           <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="" />
         </div>
       </div>
+      </div>
+
     );
 };
 

@@ -4,6 +4,7 @@ import MainLout from '../Laouts/MainLout';
 import Home from '../Pages/Home/Home';
 import Prodects from '../Pages/Prodects/Prodects';
 
+
 const createRoute =createBrowserRouter([
     {
      path: '/',
@@ -15,8 +16,8 @@ const createRoute =createBrowserRouter([
         },
         {
            path: '/Prodects',
-           element: <Prodects></Prodects>,
-           loader: ()=> fetch('https://dummyjson.com/carts')
+           element:<Prodects></Prodects>,
+           loader: ()=> fetch(`https://dummyjson.com/carts`)
         }
      ]
     }
